@@ -16,27 +16,27 @@ In this data analysis, since we are going to investigate the impact of each offe
 
 ## libraries used 
 
-import pandas as pd
-import numpy as np
-import math
-import json
-import matplotlib.pyplot as plt
-import seaborn as sb 
-import warnings
-import statsmodels.api as sm
-from datetime import datetime
-from time import time
+- import pandas as pd
+- import numpy as np
+- import math
+- import json
+- import matplotlib.pyplot as plt
+- import seaborn as sb 
+- import warnings
+- import statsmodels.api as sm
+- from datetime import datetime
+- from time import time
 
-from sklearn.ensemble import AdaBoostClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestRegressor,RandomForestClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import accuracy_score,f1_score, confusion_matrix, recall_score
-from sklearn.model_selection import train_test_split,GridSearchCV, cross_validate
-from sklearn import metrics
+- from sklearn.ensemble import AdaBoostClassifier
+- from sklearn.neighbors import KNeighborsClassifier
+- from sklearn.linear_model import LogisticRegression
+- from sklearn.tree import DecisionTreeClassifier
+- from sklearn.svm import SVC
+- from sklearn.ensemble import RandomForestRegressor,RandomForestClassifier
+- from sklearn.naive_bayes import GaussianNB
+- from sklearn.metrics import accuracy_score,f1_score, confusion_matrix, recall_score
+- from sklearn.model_selection import train_test_split,GridSearchCV, cross_validate
+- from sklearn import metrics
 
 
 ## File Descriptions <a name="files"></a>
@@ -75,15 +75,26 @@ Here is the schema and explanation of each variable in the files:
 
 
 ## Files
-Starbucks_Capstone_notebook.ipynb: the code notebook
-data : the original data file 
-temporary.csv: temporaray file with the customers response to the Starbucks offers 
-README.md readme file
+- Starbucks_Capstone_notebook.ipynb: the code notebook
+
+- data : the original data file 
+
+- temporary.csv: temporaray file with the customers response to the Starbucks offers 
+
+- README.md readme file
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here](https://medium.com/@yuanjin0318/starbucks-rewards-offer-analysis-b2895898a99c).
+The main findings of the code can be found at the post available [here](https://medium.com/@yuanjin0318/starbucks-rewards-offer-analysis-fb25b0a6b297).
 
-Based on the transcript records, I build a Decision Tree Classifier based model to analysis the customers response to each type of reward offer. 
+In this project, l combine the offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer’s attributes, customer demographic data, and whether the offer was successful. Second, I build several machine learning models to analysis if the customers will be affected by the reward offers or not, I assess the accuracy to describe the performance of each my models.
 
+Decision Tree Classifier gave me the best accuracy of prediction
 
+Bogo offer prediction accuracy: 0.7269897732325478
+
+Discount offer prediction accuracy: 0.7163247100802854
+
+Informational offer prediction accuracy: 0.7399684044233807
+
+After that, I use cross-validation method and confusion matrix to further validate the robustness of my model and found that my model is robust.
