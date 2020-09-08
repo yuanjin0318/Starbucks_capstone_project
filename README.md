@@ -10,6 +10,32 @@ In this data analysis project, I will try to solve the following questions
 (1). Which demographic groups respond best to which offer type? What is the best offer strategy for Starbucks?
 (2). How possible will a customer use the offer sent to him or her? Are there any common characteristics of the customers who take the offer?
 
+In this data analysis, since we are going to investigate the impact of each offer type on the customers. My strategy for solving this problem has four steps. First, I will combine the offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer's attributes, customer demographic data, and whether the offer was successful. Second, I will assess the accuracy to juedge my model. This provides me a baseline for evaluating the performance of models that I construct. Accuracy measures how well a model correctly predicts whether an offer is successful. In other words, we will use accuracy as the main metric to understand the pro and cons of our machine learning model, which is much more intuitive and direct for the decision-makers compared to other metrics like F-1 score.
+
+## libraries used 
+
+import pandas as pd
+import numpy as np
+import math
+import json
+import matplotlib.pyplot as plt
+import seaborn as sb 
+import warnings
+import statsmodels.api as sm
+from datetime import datetime
+from time import time
+
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestRegressor,RandomForestClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score,f1_score, confusion_matrix, recall_score
+from sklearn.model_selection import train_test_split,GridSearchCV, cross_validate
+from sklearn import metrics
+
 
 ## File Descriptions <a name="files"></a>
 
@@ -45,6 +71,12 @@ Here is the schema and explanation of each variable in the files:
 - time (int) - time in hours since the start of the test. The data begins at time t=0
 - value - (dict of strings) - either an offer id or transaction amount depending on the record
 
+
+## Files
+Starbucks_Capstone_notebook.ipynb: the code notebook
+data : the original data file 
+temporary.csv: temporaray file with the customers response to the Starbucks offers 
+README.md readme file
 
 ## Results<a name="results"></a>
 
