@@ -14,27 +14,27 @@ In this data analysis, since we are going to investigate the impact of each offe
 
 ## libraries used 
 
--import pandas as pd
--import numpy as np
--import math
--import json
--import matplotlib.pyplot as plt
--import seaborn as sb 
--import warnings
--import statsmodels.api as sm
--from datetime import datetime
--from time import time
+- import pandas as pd
+- import numpy as np
+- import math
+- import json
+- import matplotlib.pyplot as plt
+- import seaborn as sb 
+- import warnings
+- import statsmodels.api as sm
+- from datetime import datetime
+- from time import time
 
--from sklearn.ensemble import AdaBoostClassifier
--from sklearn.neighbors import KNeighborsClassifier
--from sklearn.linear_model import LogisticRegression
--from sklearn.tree import DecisionTreeClassifier
--from sklearn.svm import SVC
--from sklearn.ensemble import RandomForestRegressor,RandomForestClassifier
--from sklearn.naive_bayes import GaussianNB
--from sklearn.metrics import accuracy_score,f1_score, confusion_matrix, recall_score
--from sklearn.model_selection import train_test_split,GridSearchCV, cross_validate
--from sklearn import metrics
+- from sklearn.ensemble import AdaBoostClassifier
+- from sklearn.neighbors import KNeighborsClassifier
+- from sklearn.linear_model import LogisticRegression
+- from sklearn.tree import DecisionTreeClassifier
+- from sklearn.svm import SVC
+- from sklearn.ensemble import RandomForestRegressor,RandomForestClassifier
+- from sklearn.naive_bayes import GaussianNB
+- from sklearn.metrics import accuracy_score,f1_score, confusion_matrix, recall_score
+- from sklearn.model_selection import train_test_split,GridSearchCV, cross_validate
+- from sklearn import metrics
 
 
 ## File Descriptions <a name="files"></a>
