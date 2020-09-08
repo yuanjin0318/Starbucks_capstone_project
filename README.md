@@ -73,10 +73,13 @@ Here is the schema and explanation of each variable in the files:
 
 
 ## Files
-Starbucks_Capstone_notebook.ipynb: the code notebook
-data : the original data file 
-temporary.csv: temporaray file with the customers response to the Starbucks offers 
-README.md readme file
+- Starbucks_Capstone_notebook.ipynb: the code notebook
+
+- data : the original data file 
+
+- temporary.csv: temporaray file with the customers response to the Starbucks offers 
+
+- README.md readme file
 
 ## Results<a name="results"></a>
 
