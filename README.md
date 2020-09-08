@@ -85,6 +85,14 @@ Here is the schema and explanation of each variable in the files:
 
 The main findings of the code can be found at the post available [here](https://medium.com/@yuanjin0318/starbucks-rewards-offer-analysis-b2895898a99c).
 
-Based on the transcript records, I build a Decision Tree Classifier based model to analysis the customers response to each type of reward offer. 
+In this project, l combine the offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer’s attributes, customer demographic data, and whether the offer was successful. Second, I build several machine learning models to analysis if the customers will be affected by the reward offers or not, I assess the accuracy to describe the performance of each my models.
 
+Decision Tree Classifier gave me the best accuracy of prediction
 
+Bogo offer prediction accuracy: 0.7269897732325478
+
+Discount offer prediction accuracy: 0.7163247100802854
+
+Informational offer prediction accuracy: 0.7399684044233807
+
+After that, I use cross-validation method and confusion matrix to further validate the robustness of my model and found that my model is robust.
