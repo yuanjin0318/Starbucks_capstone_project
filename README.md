@@ -87,14 +87,19 @@ Here is the schema and explanation of each variable in the files:
 
 The main findings of the code can be found at the post available [here](https://medium.com/@yuanjin0318/starbucks-rewards-offer-analysis-fb25b0a6b297).
 
-In this project, l combine the offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer’s attributes, customer demographic data, and whether the offer was successful. Second, I build several machine learning models to analysis if the customers will be affected by the reward offers or not, I assess the accuracy to describe the performance of each my models.
+In this project, l combine the offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer’s attributes, customer demographic data, and whether the offer was successful. Second, I build several machine learning models to analysis if the customers will be affected by the reward offers or not, I assess the accuracy, F1_score, and precision score to describe the performance of each of my models.
 
-Decision Tree Classifier gave me the best accuracy of prediction
+Decision Tree Classifier gave me the best prediction. After that, I use a cross-validation and confusion matrix to further validate the robustness of my model and found that my model is robust. Finally, I used GridSearchCV to optimize my model based on the precision scores.
+Bogo accuracy score is: 0.7269897732325478,
+Bogo f1_score is: 0.6775210084033614,
+Bogo precision_score is: 0.6531645569620254.
 
-Bogo offer prediction accuracy: 0.7269897732325478
+The discount accuracy score is: 0.7163247100802854,
+Discount f1_score is: 0.7116953762466002,
+Discount precision_score is: 0.7024608501118568.
 
-Discount offer prediction accuracy: 0.7163247100802854
+The informational offer accuracy score is: 0.6846761453396525,
+Informational f1_score is: 0.24279210925644915,
+Informational precision_score is: 0.31809145129224653.
 
-Informational offer prediction accuracy: 0.7399684044233807
-
-After that, I use cross-validation method and confusion matrix to further validate the robustness of my model and found that my model is robust.
+It is noted that Although the f1 score and the precision score of the informational offer is relatively low, the precision and f1-score of the informational offer model for label = 0 is as high as 0.75 and 0.80 respectively, which will help us avoid the type 1 mistake.
