@@ -83,7 +83,7 @@ Here is the schema and explanation of each variable in the files:
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here](https://medium.com/@yuanjin0318/starbucks-rewards-offer-analysis-b2895898a99c).
+The main findings of the code can be found at the post available [here](https://medium.com/@yuanjin0318/starbucks-rewards-offer-analysis-fb25b0a6b297).
 
 In this project, l combine the offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer’s attributes, customer demographic data, and whether the offer was successful. Second, I build several machine learning models to analysis if the customers will be affected by the reward offers or not, I assess the accuracy to describe the performance of each my models.
 
